@@ -21,12 +21,13 @@ def prepare_data(file_path, prime_key):
  
     return data
          
-# test code
+# test code use the food truck data
 if __name__ == "__main__":
     file_path = "Mobile_Food_Facility_Permit.csv"
     prime_key = "locationid"
     data = prepare_data(file_path, prime_key)
     counter = 0
+    # show the first 10 entries of the data
     for key in data:
         print(data[key])
         counter += 1
